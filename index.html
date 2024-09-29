@@ -18,6 +18,63 @@
     <textarea id="message" name="message" rows="25" required></textarea><br><br>
 
     <button type="submit">Enviar</button>
+  
+  
+  <h2>Contacto 2</h2>
+  <form action="https://formspree.io/f/xovaglgb" method="POST">
+    <label for="name">Nombre completo:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Número de teléfono:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="subject">Asunto:</label><br>
+    <select id="subject" name="subject" required>
+      <option value="">Seleccione un asunto</option>
+      <option value="consulta">Consulta general</option>
+      <option value="pedido">Consulta sobre pedido</option>
+      <option value="devolucion">Devolución</option>
+      <option value="otro">Otro</option>
+    </select><br><br>
+
+    <label for="order_number">Número de pedido (si aplica):</label><br>
+    <input type="text" id="order_number" name="order_number"><br><br>
+
+    <label>Tipo de consulta:</label><br>
+    <input type="radio" id="type_product" name="query_type" value="producto">
+    <label for="type_product">Producto</label><br>
+    <input type="radio" id="type_shipping" name="query_type" value="envio">
+    <label for="type_shipping">Envío</label><br>
+    <input type="radio" id="type_payment" name="query_type" value="pago">
+    <label for="type_payment">Pago</label><br>
+    <input type="radio" id="type_other" name="query_type" value="otro">
+    <label for="type_other">Otro</label><br><br>
+
+    <label for="contact_preference">Preferencia de contacto:</label><br>
+    <select id="contact_preference" name="contact_preference">
+      <option value="email">Correo electrónico</option>
+      <option value="phone">Teléfono</option>
+    </select><br><br>
+
+    <label for="message">Tu mensaje:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <label for="attachment">Adjuntar archivo (opcional):</label><br>
+    <input type="file" id="attachment" name="attachment"><br><br>
+
+    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+    <label for="newsletter">Suscribirse al boletín de noticias</label><br><br>
+
+    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+    <label for="terms">Acepto los términos y condiciones</label><br><br>
+
+    <button type="submit">Enviar</button>
+    
   </form>
+  
+  
 </body>
 </html>
